@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+
+*{
+margin:0;
+padding:0;
+
+}
+
+body{ font-family: 'Montserrat', sans-serif;}
+h2{
+margin-bottom:5%;
+margin-top:7%;
+font-size:2em;
+text-align:center;
+}
+h1{
+text-align:center;
+padding-top:15%;
+color:white;
+font-size:3em;
+}
+h3{
+text-align:center;
+font-size:2em;
+padding-top:2%;
+padding-bottom:5%;
+position: relative;
+}
+header{
+//background-attachment:fixed;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+background-image:url("../img/header.jpg");
+  height: 100vh;
+ 
+}
+#meniu{
+width:100%;
+height:65px;
+position: fixed; /* Make it stick/fixed */
+z-index: 1;
+background-color: trasparent;
+color:white;
+line-height:65px;
+font-size:1.3em;
+}
+#logo{
+float:left;
+width:30%;
+text-align:center;
+padding-right:10%;
+}
+
+#meniu nav{
+width:60%;
+float:right;
+}
+#meniu ul{
+list-style-type:none;
+}
+#meniu li{
+display:inline-block;
+float:left;
+width:25%;
+text-align:center;
+
+}
+#meniu  a{
+text-decoration:none;
+display:block;
+color:white;
+}
+#meniu a:hover{
+border-bottom:5px solid white;
+}
+
+/*Apply styles after scroll*/
+
+.scrolling-active #meniu nav a,.scrolling-active #logo p{
+    color: #01738C;
+}
+.scrolling-active #meniu a:hover{
+border-bottom:5px solid #01738C;
+}
+.scrolling-active #meniu{background-color:white;}
+#about, #discover, #visit{
+display: inline-block;
+position: relative;
+width: 100%;
+margin: 0;
+padding: 0;
+//background-color:#F5F5F5;
+ color: #01738C;
+}
+.left{
+width:50%;
+float:left;
+margin:2% 5%;
+}
+
+.left p{
+text-indent:30px;
+line-height:1.5em;
+
+}
+.right{
+width:40%;
+float:right;
+}
+.right img{
+width:80%;
+height:auto;
+margin: 10% auto;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  width:50%;
+  margin:0 auto 5% auto;
+  
+}
+.container img{
+vertical-align: middle;
+width:100%;
+object-fit:cover;
+
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  
+}
+.mySlides img{
+height:500px;
+transition: background-image 1s ease-in-out;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  //margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+left:0;
+border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #01738C;
+  padding: 10px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+.column img{
+height:100px;
+
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+
+
+/*automatic*/
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    //margin: auto;
+   
+}
+
+.slideshow-mySlides {
+    display: none;
+  min-height: 300px;
+  width:98%;
+      margin:0 1%;
+}
+
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 2% 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease;
+}
+
+.slideshow-active,
+.dot:hover {
+    background-color: #01738C;
+}
+.three-div{
+width:31.33%;
+float:left;
+margin:0 1%;
+//display:block;
+}
+.three-div img{
+vertical-align: middle;
+width:100%;
+object-fit:cover;
+height:300px;
+}
+
+iframe{
+width:80%;
+height:500px;
+margin:2% 10%;
+}
+footer{
+width:100%;
+min-height:200px;
+background-color:#01738C;
+color:white;
+position:relative;
+display:inline-block;
+width: 100%;
+  
+    text-align: center;
+}
+#footer1, #footer2, #footer3{
+width:33.33%;
+float:left;
+
+}
+#footer2 img{
+width:10%;
+margin:0 auto;
+}
+footer a{
+text-decoration:none;
+color:white;
+}
+
+.menu-mobile{
+display:none;
+}
+.meniu-ham{
+z-index:100;
+position:relative;
+}
+	.ham {
+	  position: fixed;
+	  
+	  z-index: 100;
+	  top: 1rem;
+	  right:2rem;
+	  width: 3rem;
+	  height: 3rem;
+	  border: white solid 1px;
+	  border-radius: 5px;
+	  background-color: white;
+	  cursor: pointer;
+	}
+
+	.xIcon {
+	  display: none;
+	}
+	.burger{
+		width: 3rem;
+	  height: 3rem;
+	 
+		}
+	.menu {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  width: 100%;
+	  height: 100%;
+	  background-color: #01738C;
+	  color: white;
+	  transform: translateY(-100%);
+	  transition: transform 0.2s;
+	  list-style: none;
+padding-top:10%;
+	 text-align:center;
+	}
+
+	.showMenu {
+	  transform: translateY(0);
+	}
+
+	.menu li {
+	 display:inline-block;
+	font-size:3em;
+	width:100%;
+	text-align:center;
+	line-height:3em;
+	}
+
+	.menuLink {
+	  display:block;
+	 //font-size: 2rem;
+	  color: white;
+	  text-decoration:none;
+	//  text-decoration: underline dotted black;
+	}
+
+	.menuLink:hover {
+	  color: #C0996E;
+	//  text-decoration: underline dotted #2EDC57;
+	}
+
+
+  /* ---------- MEDIA QUERIES ---------- */
+/* pentru desktop rezolutie max 1700px */
+@media all and (max-width: 1700px) and (min-width: 1568px){
+
+}
+/* pentru desktop rezolutie max 1568px */
+@media all and (max-width: 1568px) and (min-width: 1308px){
+
+}
+/* pentru desktop rezolutie max 1308px */
+@media all and (max-width: 1308px) and (min-width: 1026px){
+
+}
+/* pentru desktop rezolutie max 1026px */
+@media all and (max-width: 1026px) and (min-width: 900px){
+h2{
+margin-top:10%;
+}
+.container{
+width:70%;
+}
+.left,.right{
+        width:98%;
+        margin:0 1%;
+        text-align:justify;
+        }
+        .right img{width:100%;}
+}
+/* pentru tablete rezolutie max 900px */
+@media all and (max-width: 900px) and (min-width: 640px){
+#meniu nav {
+        display:none;
+        }
+        .menu-mobile{
+        display:block;
+        }
+        #logo{
+        display:none;
+        }
+        #footer1,#footer2,#footer3{
+        width:100%;
+        }
+        .scrolling-active #meniu{
+        background-color:transparent;
+        }
+        .left,.right{
+        width:98%;
+        margin:0 1%;
+        text-align:justify;
+        }
+        .right img{width:100%;}
+        .container{
+        width:100%;
+        }
+        iframe{
+        width:100%;
+        margin:0;
+        }
+        .three-div{
+        width:100%;
+        margin:0;
+        }
+}
+/* pentru telefoane rezolutie max 640px */
+@media all and (max-width: 640px) and (min-width: 400px){
+ #meniu nav {
+        display:none;
+        }
+        .menu-mobile{
+        display:block;
+        }
+        #logo{
+        display:none;
+        }
+        #footer1,#footer2,#footer3{
+        width:100%;
+        }
+        .scrolling-active #meniu{
+        background-color:transparent;
+        }
+        .left,.right{
+        width:98%;
+        margin:0 1%;
+        text-align:justify;
+        }
+        .right img{width:100%;}
+        .container{
+        width:100%;
+        }
+        iframe{
+        width:100%;
+        margin:0;
+        }
+        .three-div{
+        width:100%;
+        margin:0;
+        }
+}
+/* pentru telefoane rezolutie max 400px */
+@media all and (max-width: 400px) and (min-width: 200px){
+ #meniu nav {
+        display:none;
+        }
+        .menu-mobile{
+        display:block;
+        }
+        #logo{
+        display:none;
+        }
+        #footer1,#footer2,#footer3{
+        width:100%;
+        }
+        .scrolling-active #meniu{
+        background-color:transparent;
+        }
+        .left,.right{
+        width:98%;
+        margin:0 1%;
+        text-align:justify;
+        }
+        .right img{width:100%;}
+        .container{
+        width:100%;
+        }
+        iframe{
+        width:100%;
+        margin:0;
+        }
+        .three-div{
+        width:100%;
+        margin:0;
+        }
+        
+}
